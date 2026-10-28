@@ -1,0 +1,13 @@
+order_id,date,product,category,quantity,unit_price
+1001,2026-01-03,Keyboard,Accessories,2,450000
+1002,2026-01-05,Mouse,Accessories,3,180000
+1003,2026-01-12,Monitor,Displays,1,3200000
+1004,2026-02-02,Keyboard,Accessories,1,450000
+1005,2026-02-11,Laptop,Computers,1,18500000
+1006,2026-02-18,Mouse,Accessories,5,180000
+1007,2026-03-01,Monitor,Displays,2,3200000
+1008,2026-03-09,USB Hub,Accessories,4,250000
+1009,2026-03-14,Laptop,Computers,1,18500000
+1010,2026-03-21,Keyboard,Accessories,2,450000
+1011,2026-04-02,Webcam,Accessories,2,790000
+1012,2026-04-16,Monitor,Displays,1,3200000
