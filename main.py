@@ -7,7 +7,6 @@ from analytics import load_sales, monthly_revenue, summary, top_products
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Demo phân tích CSV bằng Polars")
-    parser.add_argument("--input", default="data/sales.csv", help="Đường dẫn file CSV đầu vào")
     sub = parser.add_subparsers(dest="command", required=True)
     for name, help_text in [
         ("summary", "Hiển thị số liệu tổng quan"),
@@ -15,6 +14,7 @@ def build_parser() -> argparse.ArgumentParser:
         ("monthly", "Tổng hợp doanh thu theo tháng"),
     ]:
         command = sub.add_parser(name, help=help_text)
+        command.add_argument("--input", default="data/sales.csv", help="Đường dẫn file CSV đầu vào")
         command.add_argument("--lazy", action="store_true", help="Đọc bằng lazy query")
         command.add_argument("--output", help="Xuất bảng kết quả ra CSV")
         if name == "top-products":
